@@ -2,9 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
 :root {
-    --bg-gray: #E8E8E8;
-    --color-primary: #4D41C0;
-    --white: #fff;
+    --cor-fundo: #DDD;
+    --cor-menu: #4D41C0;
+    --cor-card: #fff;
+    --nome-filme: #4A4A4A;
 }
 
 * {
@@ -12,8 +13,8 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-html, body {
-    background-color: var(--bg-gray);
+html, body, main {
+    background-color: var(--cor-fundo);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -21,8 +22,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-    background-color: var(--color-primary);
-    color: var(--white);
+    background-color: var(--cor-menu);
+    color: var(--cor-card);
     height: 60px;
     display: flex;
     align-items: center;
@@ -53,4 +54,56 @@ nav a, nav a:hover {
 
 .dsmovie-contact-container img {
     margin-right: 10px;
+}
+
+#dsmovie-card-list {
+    padding: 40px 0;
+}
+
+.dsmovie-card {
+    width: 260px;
+    background-color: var(--cor-card);
+    border-radius: 0 0 8px 8px;
+}
+
+.dsmovie-card img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.dsmovie-card h3 {
+    color: var(--nome-filme);
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.dsmovie-card-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 20px 0;
+}
+
+.dsmovie-card-description h3 {
+    margin-bottom: 25px;
+}
+
+.dsmovie-button {
+    background-color: var(--cor-menu);
+    width: 180px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+.dsmovie-button, .dsmovie-button:hover {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--cor-card);
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
 }
