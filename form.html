@@ -26,9 +26,28 @@
                     <div class="dsmovie-card">
                         <div>
                             <img src="https://www.themoviedb.org/t/p/w533_and_h300_bestv2/ejgC2lEmuGXiP0A1LvwNezUjNmt.jpg" alt="Moonfall - Ameaça Lunar (2022)">
-                            <div class="dsmovie-card-description">
+                            <div class="dsmovie-form-description">
                                 <h3>Moonfall - Ameaça Lunar (2022)</h3>
-                                <a class="dsmovie-button" href="index.html">Cancelar</a>
+                                <form class="dsmovie-form">
+                                    <div class="form-group dsmovie-form-group">
+                                        <label for="email">Informe seu email</label> <!-- label = rótulo -->
+                                        <input class="form-control" type="email" id="email">
+                                    </div>
+                                    <div class="dsmovie-form-group">
+                                        <label for="score">Informe sua avaliação</label>
+                                        <select class="form-control" name="score" id="score">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </div>
+                                    <div class="dsmovie-button-container">
+                                        <button  class="dsmovie-button ficha" type="submit">Salvar</button>
+                                        <a class="dsmovie-button ficha" href="index.html">Cancelar</a>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
