@@ -7,6 +7,7 @@
     --cor-card: #fff;
     --nome-filme: #4A4A4A;
     --inserir-dados: #AAA;
+    --cor-nota: #FFBB3A;
 }
 
 * {
@@ -87,11 +88,34 @@ nav a, nav a:hover {
     justify-content: space-between;
     padding: 10px 20px 20px 20px;
     border-radius: 0 0 8px 8px;
-    min-height: 150px;
+    height: 220px;
 }
 
 .dsmovie-card-description h3 {
     margin-bottom: 25px;
+}
+
+.dsmovie-card-description-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dsmovie-card-description-bottom h4 {
+    color: var(--cor-nota);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.dsmovie-card-description-bottom p {
+    color: #AAA;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.dsmovie-card-description-bottom img {
+    width: 22px;
 }
 
 .dsmovie-button {
